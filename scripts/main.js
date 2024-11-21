@@ -1,0 +1,1 @@
+//Algum código que esteja presente em praticamente todas as páginas, como um botão hamburguer

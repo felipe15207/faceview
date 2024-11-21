@@ -1,0 +1,112 @@
+/*slogan e logo*/
+.logo-slogan img{
+    width: 50%;
+    height: 100%;
+}
+
+#apoio-slogan {
+    color: #a90101;
+}
+
+/* destques da loja e card dos produtos*/
+
+.section-destaques {
+    width: 100%;
+    height: 460px;
+    background-color: #1C0E00;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 15px;
+}
+
+.section-destaques::-webkit-scrollbar {
+    background-color: #1C0E00;
+    border-radius: 10px;
+    
+}
+
+.section-destaques::-webkit-scrollbar {
+    height: 8px;
+}
+
+.section-destaques::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border-radius: 10px;
+}
+
+.card-produto {
+    width: 290px;
+    height: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-produto {
+    /*width: 240;
+    height: 200;
+    background-color: cadetblue;*/
+}
+
+.img-produto img {
+    width: 240px;
+    height: 200px;
+}
+
+.nome-produto {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.valor-produto {
+    font-size: 18px;
+    color: #C53030;
+}
+
+.op-pagamentos {
+    color: #7C7C7C;
+    font-size: 11px;
+}
+
+.info-produto {
+    background: #C53030;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 25px;
+    margin-top: 12px;
+}
+
+/* sobre */
+
+
+/* COFFEE */
+.texto-degrade {
+    display: flex;
+    flex-direction: column;     
+    font-size: 48px;            
+    font-weight: bold;         
+    letter-spacing: 5px;        
+    text-align: center;       
+    margin-left: 30px;         
+    background: linear-gradient(180deg, #BE0000, #790000, #FFF);
+    padding: 20px;              
+    color: transparent;         
+    -webkit-background-clip: text; 
+}
+
+.texto-degrade span {
+    margin-bottom: 10px;        
+}
