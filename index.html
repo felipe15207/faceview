@@ -2,160 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/f527ee9b29.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
-    <!-- Links internos aqui por gentileza. -->
-    <link rel="stylesheet" href="styles/main.css"> <!-- Nomes de pastas e arquivos tempórarios -->
-    <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts/main.js" defer></script>
-    <!-- Links externos aqui por gentileza. Obs: Caso seja um script como Jquery 
-     coloque no topo dos outros scripts (na sessão scripts internos), pois ele precisa obrigatóriamente ser carregador antes dos outros scripts-->
-     <title>Boutique Café - Página Principal</title>
+    <link rel="stylesheet" href="src/cores.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/mobile.css">
+    <title>Navbar</title>
 </head>
 <body>
-    <!--Estrutura-->
-    <header class="header">
+    <section class="head">
+        <header>
         <nav>
-            <img src="imagens/logo.png" alt="">
+            <img src="imgs/logo.png" alt="">
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul>
-                <li><a href="index.html" id="current-page">INÍCIO</a></li>
-                <li><a href="cardapio.html">CARDÁPIO</a></li>
-                <li><a href="s">SOBRE NÓS</a></li>
+                <li><a href="/" id="current-page">HOME</a></li>
+                <li><a href="/">CARDÁPIO</a></li>
+                <li><a href="/">CONHEÇA</a></li>
+                <li><a href="">AJUDA</a></li>
+                <li>
+                    <div class="buttons">
+                        <a id="btn-nav" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" id="btn-nav">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <header class="slogan-header">
-            <div class="logo-slogan"><img src="imagens/logo.png" alt=""></div>
-            <div class="text-slogan">
-                <h2>“Não oferecemos somente o produto <span id="apoio-slogan">MAS A EXPERIÊNCIA!</span>”</h2>
-            </div>
-        </header>
-        
-        <hr class="barra">
+    <section id="text-home">
+        <h2>SINTA A <span>VERDADEIRA</span><br>EXPERIÊNCIA DE UM<br><span id="cafe">BOM CAFÉ</span>.</h2>
+    </section>
+    </section>
 
-        <h1 class="titulo-section">DESTAQUES DA LOJA</h1>
+    <section class="destaques">
+        <div class="text-destaques">
+            <h3 class="text-center section-subheading"> Por que escolher a Boutique Cáfe?</h3>
+            <h1 class="text-center section-heading">Destaques da loja</h1>
+          </div>
 
-        <section class="section-destaques">
-            <div class="card-produto">
-                <div class="img-produto"><img src="" alt=""></div>
-                <div class="dados-produto">
-                    <p class="nome-produto">Nome do produto e informações básicas dele aqui.</p>
-                    <span class="valor-produto">R$ PREÇO</span>
-                    <br>
-                    <span class="op-pagamentos">Formas de pagamento</span>
-                </div>
-                <button class="info-produto">MAIS INFORMAÇÕES</button>
-            </div>
-
-            <div class="card-produto">
-                <div class="img-produto"><img src="" alt=""></div>
-                <div class="dados-produto">
-                    <p class="nome-produto">Nome do produto e informações básicas dele aqui.</p>
-                    <span class="valor-produto">R$ PREÇO</span>
-                    <br>
-                    <span class="op-pagamentos">Formas de pagamento</span>
-                </div>
-                <button class="info-produto">MAIS INFORMAÇÕES</button>
-            </div>
-
-            <div class="card-produto">
-                <div class="img-produto"><img src="" alt=""></div>
-                <div class="dados-produto">
-                    <p class="nome-produto">Nome do produto e informações básicas dele aqui.</p>
-                    <span class="valor-produto">R$ PREÇO</span>
-                    <br>
-                    <span class="op-pagamentos">Formas de pagamento</span>
-                </div>
-                <button class="info-produto">MAIS INFORMAÇÕES</button>
-            </div>
-
-            <div class="card-produto">
-                <div class="img-produto"><img src="" alt=""></div>
-                <div class="dados-produto">
-                    <p class="nome-produto">Nome do produto e informações básicas dele aqui.</p>
-                    <span class="valor-produto">R$ PREÇO</span>
-                    <br>
-                    <span class="op-pagamentos">Formas de pagamento</span>
-                </div>
-                <button class="info-produto">MAIS INFORMAÇÕES</button>
-            </div>
-
-            <div class="card-produto">
-                <div class="img-produto"><img src="" alt=""></div>
-                <div class="dados-produto">
-                    <p class="nome-produto">Nome do produto e informações básicas dele aqui.</p>
-                    <span class="valor-produto">R$ PREÇO</span>
-                    <br>
-                    <span class="op-pagamentos">Formas de pagamento</span>
-                </div>
-                <button class="info-produto">MAIS INFORMAÇÕES</button>
-            </div>
-        </section>
-
-        <h1 class="titulo-section">SOBRE NÓS</h1>
-
-        <hr class="barra">
-
-        <section class="section-sobre">
-            <div class="container-produto produto1">
-
-            </div>
-
-            <div class="container-produto produto2">
-
-            </div>
-
-        </section>
-
-        <hr class="barra">
-
-        <section class="section-ambiente">
-            <h1>Ambiente<br><span id="enfase-ambiente">BOUTIQUE</span></h1>
-            <div class="container-ambiente">
-
-            </div>
-        </section>
-
-        <hr class="barra">
-
-        <section class="section-coffee">
-            <div class="coffee coffee1">
-
-            </div>
-
-            <div class="texto-degrade">
-                <span>C</span>
-                <span>O</span>
-                <span>F</span>
-                <span>F</span>
-                <span>E</span>
-                <span>E</span>
-            </div>
-
-            <div class="coffee coffee2"></div>
-        </section>
-
-        <hr class="barra">
-
-    </main>
-
-    <footer class="footer">
-        <div class="midias-sociais">
-            <h1>REDES SOCIAIS</h1>
-            <div class="footer-imgmidia">
-                <img src="" alt="" width="50" height="50">
-            <img src="" alt="" width="50" height="50">
-            </div>
+          <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="imgs/slide1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imgs/slide2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imgs/slide3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imgs/slide4.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imgs/slide5.jpeg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+    
+    <footer>
+        <img src="imgs/footer-logo.png" alt="">
+        <p>&copy; Todos os direitos reservados<br>Rua Tal tal, Cordeiro - Recife, PE - 00000-000</p>
+        <div id="botoes">
+            <button class="btn-return" id="ir-topo"><i class="fa-solid fa-angle-up"></i> Topo</button>
         </div>
-
     </footer>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+    loop: true, // Loop infinito
+    slidesPerView: 3, // Exibe 3 slides ao mesmo tempo
+    centeredSlides: true, // Centraliza o slide ativo
+    spaceBetween: 50, // Distância entre os slides
+    effect: 'coverflow', // Ativa o efeito de perspectiva 3D
+    coverflowEffect: {
+      rotate: 50, // Angulação dos slides, criando a sensação de 3D
+      stretch: 0, // Distância entre os slides
+      depth: 150, // Profundidade do efeito, fazendo os slides parecerem distantes
+      modifier: 1, // Intensidade do efeito
+      slideShadows: true, // Sombras nos slides
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Permite clicar na paginação
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+    </script>
+    <script src="src/script.js"></script>
 </body>
 </html>
