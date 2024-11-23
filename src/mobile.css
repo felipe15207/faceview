@@ -24,6 +24,10 @@ header {
 
 }
 
+footer #copyright {
+    display: none;
+}
+
 
 @media (max-width: 999px) {
     body {
