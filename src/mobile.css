@@ -24,10 +24,6 @@ header {
 
 }
 
-footer #copyright {
-    display: none;
-}
-
 
 @media (max-width: 999px) {
     body {
@@ -73,6 +69,10 @@ footer #copyright {
     }
     .head {
         background-size: 1000px;
+    }
+
+    footer #copyright {
+        display: none;
     }
 }
 
