@@ -1,4 +1,5 @@
 header {
+    position: relative;
     .mobile-menu div {
         width: 32px;
         height: 2px;
@@ -26,18 +27,18 @@ header {
 
 
 @media (max-width: 999px) {
-    body {
+    /*body {
         overflow-x: hidden;
-    }
-    header nav {
+    }*/
+    .header nav {
         justify-content: space-between;
     }
-    header nav ul {
-        position: absolute;
+    .header nav ul {
+        position: fixed;
         margin-top: 80px;
         top: 8vh;
         right: 0;
-        width: 100vw;
+        width: 100%;
         height: 92vh;
         background-color: #0f0e0d;
         flex-direction: column;
@@ -69,10 +70,6 @@ header {
     }
     .head {
         background-size: 1000px;
-    }
-
-    footer #copyright {
-        display: none;
     }
 }
 

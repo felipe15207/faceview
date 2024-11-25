@@ -43,12 +43,3 @@ class MobileNavbar {
     "header nav",
   );
   mobileNavbar.init();
-
-const btntopo = document.getElementById("ir-topo")
- 
-btntopo.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth" // Rolagem suave
-  });
-})
