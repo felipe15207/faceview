@@ -8,6 +8,7 @@
 .swiper {
     width: 100%;
     padding: 50px 0;
+    z-index: 1;
 }
 
 .swiper-slide {
@@ -37,6 +38,14 @@
         max-width: 380px; 
         margin: auto; 
     }*/
+
+    .info-produto h3 {
+        font-size: 16px;
+    }
+
+    .info-produto h2 {
+        font-size: 12px;
+    }
 }
 
 .card-produto {
