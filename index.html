@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="src/cores.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="src/mobile.css">
+    <link rel="stylesheet" href="src/home.css">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
     <title>Boutique Café - Home</title>
 </head>
 <body>
@@ -41,27 +43,95 @@
             </ul>
         </nav>
 
-    <section id="text-home">
-        <h2>SINTA A <span>VERDADEIRA</span><br>EXPERIÊNCIA DE UM<br><span id="cafe">BOM CAFÉ</span>.</h2>
-    </section>
+        <section id="text-home">
+            <h2>SINTA A <span>VERDADEIRA</span><br>EXPERIÊNCIA DE UM<br><span id="cafe">BOM CAFÉ</span>.</h2>
+        </section>
     </header>
 
     <main class="main">
-        <section>
+        <section class="section-destaques">
+            <div class="swiper">
+                <div class="swiper-wrapper">
             
+                    <div class="swiper-slide">
+                        <img src="imgs/slide1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/slide2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-produto">
+                            <div class="info-produto">
+                                <div>
+                                    <img src="imgs/cappuccino-boutique.webp" alt="" width="110">
+                                    <h3>Cappuccino Boutique</h3>
+                                    <h2>R$23,99</h2>
+                                    <a href="cardapio.html">Acessar Cardápio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/slide4.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/slide5.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/cappuccino-boutique.webp" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-produto">
+                            <div class="info-produto">
+                                <div>
+                                    <img src="imgs/slide6.webp" alt="" width="110">
+                                    <h3>Cheesecake de baunilha</h3>
+                                    <h2>R$27,89</h2>
+                                    <a href="cardapio.html">Acessar Cardápio</a>
+                                </div>
+                            </div>
+                           </div>
+                    </div>
+            
+                </div>
+             
+                <div class="swiper-pagination"></div>
+              
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+               
+                <div class="swiper-scrollbar"></div>
+              </div>
         </section>
+        
+        <section class="local">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.402240302575!2d-34.93099150584383!3d-8.06038848719957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab193a4a71f95f%3A0x3de468e2d90acfe9!2sBoutique%20Caf%C3%A9-Cordeiro!5e0!3m2!1spt-BR!2sbr!4v1732514074581!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <div class="construcao">
+            <img src="imgs/construcao.gif" alt="" style="width: 100%;">
+        </div>
 
     </main>
     
     <footer class="footer">
         <img src="imgs/logo.png" alt="">
-        <p id="copyright">&copy; Todos os direitos reservados<br>Rua Tal tal, Cordeiro - Recife, PE - 00000-000</p>
+        <p id="copyright">&copy; Todos os direitos reservados<br>Rua Tijucas, 11 - Loja 03
+            Cordeiro - Recife/PE</p>
         <div id="botoes">
             <button class="btn-return" id="ir-topo"><i class="fa-solid fa-angle-up"></i> Topo</button>
         </div>
     </footer>
+
+    <script src="src/swiper-bundle.min.js"></script>
+    <script src="src/home.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="src/script.js"></script>
+
 
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger

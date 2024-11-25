@@ -3,10 +3,10 @@ var swiper = new Swiper(".swiper", {
     loop: true,
     grabCursor: true,
     centeredSlides: true,
-    initialSlide: 2,
+    initialSlide: 1,
     speed: 600,
     preventClicks: true,
-    slidesPerView: "3",
+    slidesPerView: 3,
     coverflowEffect: {
         rotate: 0,
         stretch: 80,
@@ -29,5 +29,13 @@ var swiper = new Swiper(".swiper", {
     },
     autoplay: {
         delay: 2000,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        480: {
+            slidesPerView: 2,
+        }
     },
 })
