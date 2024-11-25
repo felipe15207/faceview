@@ -43,3 +43,7 @@ class MobileNavbar {
     "header nav",
   );
   mobileNavbar.init();
+
+setTimeout(function(){
+    $('.preload').fadeToggle();
+}, 500);

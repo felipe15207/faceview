@@ -1,5 +1,4 @@
 header {
-    position: relative;
     .mobile-menu div {
         width: 32px;
         height: 2px;
@@ -27,18 +26,19 @@ header {
 
 
 @media (max-width: 999px) {
-    /*body {
-        overflow-x: hidden;
-    }*/
-    .header nav {
+    body {
+        /*overflow-x: hidden;*/
+        position: relative;
+    }
+    header nav {
         justify-content: space-between;
     }
-    .header nav ul {
+    header nav ul {
         position: fixed;
         margin-top: 80px;
         top: 8vh;
         right: 0;
-        width: 100%;
+        width: 100vw;
         height: 92vh;
         background-color: #0f0e0d;
         flex-direction: column;
@@ -71,6 +71,10 @@ header {
     .head {
         background-size: 1000px;
     }
+
+    footer #copyright {
+        display: none;
+    }
 }
 
 @keyframes navLinkFade {
@@ -82,10 +86,4 @@ header {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-@media (max-width: 999px) {
-
-    
-    
 }
