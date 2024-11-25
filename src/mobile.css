@@ -27,14 +27,13 @@ header {
 
 @media (max-width: 999px) {
     body {
-        /*overflow-x: hidden;*/
-        position: relative;
+        overflow-x: hidden;
     }
     header nav {
         justify-content: space-between;
     }
     header nav ul {
-        position: fixed;
+        position: absolute;
         margin-top: 80px;
         top: 8vh;
         right: 0;
