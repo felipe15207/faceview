@@ -119,9 +119,13 @@
     width: 100%;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.fotos-ambiente
+.fotos-ambiente {
+    width: 300px;
+}
 
 .elementos-ambiente .fotos-ambiente img {
     width: 300px;
