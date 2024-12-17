@@ -1,0 +1,47 @@
+@media screen and (max-width: 769px) {
+    header {
+        
+        nav ul {
+            display: flex;
+            background-color: #c0c0c00c;
+            backdrop-filter: blur(30px);
+            position: fixed;
+            bottom: 0;
+            border-radius: 15px;
+            width: 95%;
+            height: 11vh;
+            justify-content: space-around;
+            margin: 15px;
+            z-index: 999;
+        }
+        #btn-instagram {
+            display: flex;
+            background-color: #C0AB70; 
+            width: 35px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+        nav ul li a {
+            display: flex;
+            
+            font-size: 17px;
+        }
+        nav ul li a::after {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    header {
+        #btn-instagram, #btn-li {
+            position: absolute;
+            left: 50%;
+            top: -30%;
+            transform: translate(-70%, -10%);
+            box-shadow: 0px 5px 15px #0000005e;
+        }
+    }
+}

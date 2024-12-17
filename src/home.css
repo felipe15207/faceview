@@ -101,3 +101,30 @@
     color: #fff;
     font-weight: 500;
 }
+
+
+.ambiente-section {
+    width: 100%;
+    padding: 50px;
+    color: #FFF;
+}
+
+.titulo-ambiente {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.elementos-ambiente {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.fotos-ambiente
+
+.elementos-ambiente .fotos-ambiente img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
