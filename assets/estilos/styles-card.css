@@ -5,7 +5,9 @@
 /* COMEÇOU O CONTEÚDO PRINCIPAL */
 
 .section-tipos-de-cafe {
+  padding-top: 20px !important;
   padding: 130px;
+  background-color: #111111;
 
   h1 {
       color: #DEB887;
@@ -210,12 +212,12 @@
 }
 
 .card__img {
-  width: 328px;
+  width: 328px !important; /*328*/
   border-radius: 1.5rem;
 }
 
 .card__data {
-  width: 280px;
+  width: 280px !important;
   background-color: var(--container-color);
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
@@ -338,7 +340,7 @@
   }*/
 
   .card__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .card__img {
     width: 348px;
@@ -351,6 +353,7 @@
 
 /* AQUI É O CSS DA BIOGRAFIA!!!!!!!!!!!!!!!!! */
 .biografia {
+  background-color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -501,6 +504,10 @@
 }
 
 /* AQUI É A PARTE DO SLIDE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+.slides-conheca {
+  background-color: black;
+}
+
 .title-sc {
   color: #DEB887;
   font-size: 4.3rem;
@@ -511,4 +518,53 @@
   .title-sc {
     font-size: 3rem !important;
   }
+}
+
+.swiper-container {
+  width: 100%;
+  /*height: 620px;*/ /* Altura do slider */
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide img {
+  width: 100% !important;
+  /*height: 620px;*/
+  object-fit: cover; /* Faz com que as imagens cubram o slide sem distorcer */
+}
+
+@media screen and (max-width: 960px) {
+      .swiper-slide img {
+          width: 100%;
+          height: 420px;
+      }
+
+      
+}
+
+/* Controles de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators button {
+background-color: #f40000 !important;
+}
+
+.carousel-indicators button:hover {
+background-color: blue !important;
+}
+
+.carousel-indicators .active {
+background-color: #ffffff !important; 
 }
