@@ -126,6 +126,7 @@ nav {
 }
 
 .btn-loc {
+    text-decoration: none;
     animation: btn-op-rg 2s ease;
     font-family: "Itim", cursive;
     margin-top: 5vw;
