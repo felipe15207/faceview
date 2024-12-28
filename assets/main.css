@@ -12,7 +12,7 @@ body {
     flex-direction: column;
 }
 
-.main {
+.content-main {
     background-color: transparent;
     flex: 1 1;
     min-height: 100vh;
